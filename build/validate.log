@@ -1,0 +1,14 @@
+{
+  _: [],
+  f: [
+    'c:\\VSS\\dei_studies\\VLDAA\\Rod_Cutting\\NEW\\experiment-descriptor.json'
+  ],
+  files: [
+    'c:\\VSS\\dei_studies\\VLDAA\\Rod_Cutting\\NEW\\experiment-descriptor.json'
+  ],
+  '$0': 'validate'
+}
+Json Error: There are additional properties
+Json Error: must match "then" schema
+Failed while validating c:\VSS\dei_studies\VLDAA\Rod_Cutting\NEW\experiment-descriptor.json
+Error: Schema is Invalid
