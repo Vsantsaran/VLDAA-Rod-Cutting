@@ -339,6 +339,15 @@
           <h3 id="mathematical-definition">Mathematical Definition</h3>
           <p>Given a rod of length n and a price table p[i] (where p[i] is the price of a rod of length i), determine the maximum revenue r[n] obtainable by cutting and selling the pieces.</p>
           <p>r[n] = max (p[i] + r[n-i]) for all 1 &lt;= i &lt;= n</p>
+          <p><strong>Understanding the Recurrence Relation:</strong>
+          This formula is the heart of the dynamic programming solution. Here is how to break it down:</p>
+          <ul>
+          <li><code>r[n]</code> represents the <strong>maximum revenue</strong> we can obtain from a rod of total length <code>n</code>.</li>
+          <li><code>p[i]</code> represents the price of making a first cut of length <code>i</code> and selling that piece directly.</li>
+          <li><code>r[n-i]</code> represents the maximum revenue we can get from recursively cutting the remaining rod of length <code>n-i</code>.</li>
+          <li><code>p[i] + r[n-i]</code> represents the total revenue if we choose to make out first cut precisely at length <code>i</code>.</li>
+          <li>The <code>max</code> over all <code>i</code> (from 1 to <code>n</code>) means we try every possible first cut, calculate the total revenue for each, and confidently pick the cut that yields the most money. By trusting that <code>r[n-i]</code> has already been calculated optimally (the Principle of Optimality), we can build up the answer incrementally.</li>
+          </ul>
           <h3 id="real-world-significance">Real-World Significance</h3>
           <p>This problem appears everywhere in the real world:</p>
           <ul>
@@ -375,6 +384,11 @@
           <td>O(n)</td>
           </tr>
           </tbody></table>
+          <p><strong>Understanding the Complexities:</strong></p>
+          <ul>
+          <li><strong>Time Complexity ($O(n^2)$)</strong>: For a rod of length <code>n</code>, the algorithm fills a table of size <code>n</code>. For each rod length <code>i</code> in the table (where <code>i</code> goes from 1 to <code>n</code>), it iterates <code>i</code> times to evaluate all possible first cuts. This results in $1 + 2 + 3 + ... + n$ operations, which equals $\frac{n(n+1)}{2}$. In Big O notation, we drop the constants and lower-order terms, giving $O(n^2)$.</li>
+          <li><strong>Space Complexity ($O(n)$)</strong>: The bottom-up algorithm only requires a 1D array (<code>revenue[]</code>) to store the maximum revenue for lengths <code>0</code> up to <code>n</code>, and another array (<code>cuts[]</code>) of the same size to reconstruct the optimal cuts. Storing these arrays requires $O(n)$ extra space.</li>
+          </ul>
           <p>The difference is staggering! For n = 20, DP is about 50,000 times faster!</p>
           <h2 id="understanding-through-example">Understanding Through Example</h2>
           <p>Let's cut a rod of length 4 with this price table:</p>

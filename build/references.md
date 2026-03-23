@@ -24,9 +24,3 @@
 1. Virtual Labs Platform - Dayalbagh Educational Institute
 2. Font Awesome Icons - https://fontawesome.com/
 3. JSON Validator - https://jsonlint.com/
-
-## Standards and Protocols
-
-1. FASTA format for biological sequences
-2. JSON format for data interchange
-3. HTML5/CSS3/ES6 for web standards
