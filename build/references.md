@@ -24,3 +24,15 @@
 1. Virtual Labs Platform - Dayalbagh Educational Institute
 2. Font Awesome Icons - https://fontawesome.com/
 3. JSON Validator - https://jsonlint.com/
+
+## Online Video Lectures
+
+1. **NPTEL: Design and Analysis of Algorithms**  
+   - Offered by: IIT Bombay  
+   - Instructors: Prof. Abhiram G. Ranade, Prof. Ajit A. Diwan, Prof. Sundar Viswanathan  
+   - Link: https://nptel.ac.in/courses/106101060  
+
+2. **NPTEL (NOC): Design and Analysis of Algorithms**  
+   - Offered by: Chennai Mathematical Institute  
+   - Instructor: Prof. Madhavan Mukund
+   - Link: https://nptel.ac.in/courses/106106131  
